@@ -1,0 +1,18 @@
+version: 2
+
+models: []
+# Define your mart models here, e.g.:
+# - name: fct_orders
+#   description: One row per order with enriched attributes.
+#   config:
+#     meta:
+#       owner: TODO-owning-team
+#       sla_freshness: 24h
+#       pii: false
+#   columns:
+#     - name: order_id
+#       data_type: varchar
+#       meta: {required: true}
+#       data_tests: [unique, not_null]
+#     - name: customer_id
+#       data_type: varchar
