@@ -1,0 +1,35 @@
+# Data-product manifest — fill in after spawning from the template.
+# Batch 4 (scaffold/config injection) will commit a product-specific version.
+
+name: TODO-product-name
+domain: TODO-domain          # e.g. commerce | logistics | finance | marketing | platform
+owner: TODO-owning-team      # e.g. team-commerce
+version: 0.1.0
+description: "TODO: short description of what this data product provides"
+tier: bronze                 # bronze | silver | gold
+
+status: provisioning         # updated to 'active' by the Mesh Console on completion
+
+sla:
+  freshness_hours: 24
+  uptime_percent: 99.0
+
+lifecycle:
+  deprecated_since: null
+  sunset_date: null
+  replaced_by: null
+
+sources: []
+# List upstream source identifiers consumed by this product, e.g.:
+#   - source-postgres
+#   - source-kafka
+
+ports: []
+# List active output-port IDs, e.g.:
+#   - port-s3
+#   - port-snowflake
+
+resources: []
+# Infrastructure resources, e.g.:
+#   - repo
+#   - pipeline
