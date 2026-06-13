@@ -1,0 +1,12 @@
+data/
+output/
+contracts/generated/
+transformation/target/
+transformation/dbt_packages/
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+.venv/
+uv.lock
+.DS_Store
