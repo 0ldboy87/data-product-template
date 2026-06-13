@@ -1,0 +1,11 @@
+TODO_project_name:              # replace with slug (hyphens → underscores)
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('INTERNAL_DB_PATH', 'data/internal.duckdb') }}"
+      threads: 4
+    prod:
+      type: duckdb
+      path: "{{ env_var('INTERNAL_DB_PATH_PROD', 'data/internal_prod.duckdb') }}"
+      threads: 4
