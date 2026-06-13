@@ -1,0 +1,37 @@
+active_adapters: []
+# List the output adapters to enable, matching the port IDs in output_ports.yml, e.g.:
+#   - s3-parquet
+#   - snowflake
+#   - duckdb
+
+mart_tables: []
+# List the dbt mart model names to expose through the active adapters, e.g.:
+#   - fct_orders
+#   - dim_customers
+
+# ── Adapter settings (fill in the sections matching your active_adapters) ──────
+
+# s3-parquet:
+#   bucket: ${DP_S3_BUCKET}
+#   prefix: data/
+#   region: ${AWS_REGION:-eu-central-1}
+
+# snowflake:
+#   account: ${SNOWFLAKE_ACCOUNT}
+#   user: ${SNOWFLAKE_USER}
+#   password: ${SNOWFLAKE_PASSWORD}
+#   database: TODO_DOMAIN
+#   schema: TODO_SLUG_DP
+#   warehouse: COMPUTE_WH
+
+# duckdb:
+#   path: output/TODO-slug.duckdb
+
+datahub:
+  enabled: false
+  platform: TODO-platform       # duckdb | s3 | snowflake
+  environment: DEV
+  dry_run: true
+  dry_run_output: contracts/datahub_mcps.json
+  server_url: ${DATAHUB_GMS_URL}
+  token: ${DATAHUB_TOKEN}
