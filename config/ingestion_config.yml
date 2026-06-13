@@ -1,0 +1,20 @@
+source:
+  type: TODO-source-type       # e.g. postgres | mysql | kafka | s3 | rest-api
+  # connection / path settings depend on the source type; examples below:
+  #
+  # For a database source:
+  #   host: ${SOURCE_HOST}
+  #   port: 5432
+  #   database: ${SOURCE_DB}
+  #   user: ${SOURCE_USER}
+  #   password: ${SOURCE_PASSWORD}
+  #
+  # For a file source:
+  #   path: ${SOURCE_PATH:-data/source.duckdb}
+  #
+  tables: []
+  # List tables to ingest, e.g.:
+  #   - name: orders
+  #     merge_key: order_id
+  #   - name: customers
+  #     merge_key: customer_id
