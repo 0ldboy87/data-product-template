@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables: []
+    # Add tables here after ingestion is configured, e.g.:
+    # - name: orders
+    # - name: customers
