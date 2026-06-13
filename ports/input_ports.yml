@@ -1,0 +1,12 @@
+input_ports: []
+# Declare upstream data sources consumed by this product, e.g.:
+#
+#   - id: source-postgres
+#     type: postgres
+#     description: Production orders database
+#     config_ref: config/ingestion_config.yml
+#
+#   - id: source-kafka
+#     type: kafka
+#     description: Real-time event stream
+#     topic: orders.created
